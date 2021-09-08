@@ -13,6 +13,7 @@
         "bootstrap-vue": "^2.21.2",
         "braintree": "^3.3.0",
         "braintree-web": "^3.76.2",
+        "buefy": "^0.9.8",
         "core-js": "^3.6.5",
         "paypal-checkout": "^4.0.328",
         "register-service-worker": "^1.7.1",
