@@ -125,8 +125,7 @@
       /* update profil */
       update: function () {
         this.axios
-          .put(
-            "http://localhost:3000/client/update/" + this.client.id,
+          .put(`${this.$apiurl}client/update/${this.client.id}/`,
             this.client
           )
           .then((res) => {

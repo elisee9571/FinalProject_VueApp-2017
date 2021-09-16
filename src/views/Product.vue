@@ -51,7 +51,7 @@
                   console.log(this.produits); /* panier */
                   this.getLocalStorage(); /* panier */
                   this.axios
-                        .get("http://localhost:3000/produit/getById/" + this.id)
+                        .get(`${this.$apiurl}produit/getById/${this.id}/`)
                         .then((res) => {
                               console.log(res);
                               this.produit = res.data.produit;

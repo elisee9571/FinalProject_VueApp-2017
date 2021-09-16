@@ -24,7 +24,7 @@
         },
 
         created() {
-            this.axios.post("http://localhost:3000/client/validemail/", {
+            this.axios.post(`${this.$apiurl}client/validemail/`, {
                     email: this.email,
                 })
                 .then((res) => {

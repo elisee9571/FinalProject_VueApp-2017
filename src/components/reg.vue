@@ -65,7 +65,7 @@
         },
         methods: {
             dologin: function () {
-                this.axios.post("http://localhost:3000/client/login", {
+                this.axios.post(`${this.$apiurl}client/login/`, {
                         email: this.emaillogin,
                         password: this.passwordlogin
                     })
@@ -90,7 +90,7 @@
             },
             doregister: function () {
 
-                this.axios.post("http://localhost:3000/client/register", {
+                this.axios.post(`${this.$apiurl}client/register/`, {
                         nom: this.nom,
                         email: this.email,
                         password: this.password

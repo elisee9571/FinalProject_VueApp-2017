@@ -150,7 +150,7 @@
                         prix.push(item.prix_unitaire);
                         quantite.push(item.quantite);
                     });
-                    this.axios.post("http://localhost:3000/commande/new", {
+                    this.axios.post(`${this.$apiurl}commande/new/`, {
                             clientId: client.id,
                             panier: this.panier,
                             produitId: produitId,

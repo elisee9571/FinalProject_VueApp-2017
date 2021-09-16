@@ -54,7 +54,7 @@
         },
         methods: {
             send: function () {
-                this.axios.post("http://localhost:3000/receivemail", {
+                this.axios.post(`${this.$apiurl}receivemail/`, {
                         nom: this.nom,
                         email: this.email,
                         subject: this.subject,

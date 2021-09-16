@@ -32,7 +32,7 @@
             },
             created() {
             this.axios
-                .get("http://localhost:3000/produit/order2/4")
+                .get(`${this.$apiurl}produit/order2/4/`)
                 .then((res) => {
                     this.produits = res.data.produits;
                 })

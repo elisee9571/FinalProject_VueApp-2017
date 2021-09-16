@@ -37,7 +37,7 @@
 
         methods: {
             up: function () {
-                this.axios.post("http://localhost:3000/client/updatepassword", {
+                this.axios.post(`${this.$apiurl}client/updatepassword/`, {
                         password: this.password,
                         forget: this.forget,
                     })

@@ -32,7 +32,7 @@
                 this.$router.go(-1);
             },
             oublier: function () {
-                this.axios.post("http://localhost:3000/client/forgetpassword", {
+                this.axios.post(`${this.$apiurl}client/forgetpassword/`, {
                         email: this.email,
                     })
                     .then(() => {
