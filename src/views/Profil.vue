@@ -130,7 +130,7 @@
           )
           .then((res) => {
             if (res.status === 200) {
-              localStorage.setItem("token", JSON.stringify(res.data.token));
+              localStorage.setItem("token", JSON.stringify(res.data.token).replace(`"`, ""));
               alert(`Votre profil a été mis à jour`);
             } else {
               alert(`Erreur: Votre profil n'a pas été mis à jour`);

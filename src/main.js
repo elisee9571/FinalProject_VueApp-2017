@@ -3,7 +3,9 @@ import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
 
-Vue.prototype.$apiurl = "https://api.2017.ovh/";
+// Vue.prototype.$apiurl = "https://api.2017.ovh/";
+Vue.prototype.$apiurl = "http://localhost:3000/";
+
 /* import axios pour liée mon node et vue grace aux requetes*/
 /* Axios est une bibliothèque, Elle permet de communiquer avec des API en utilisant des requêtes. */
 import axios from "axios";
